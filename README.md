@@ -3,15 +3,16 @@
 # ------------------------------------------------------------------------------
 
 # 🚀 Sobre este Makefile 🚀
-# Este arquivo Makefile automatiza tarefas comuns para o repositório dotbash.
-# Simplifica a clonagem, a configuração de permissões e fornece informações
-# sobre como usar e contribuir com este conjunto de scripts Bash.
+# Automatiza tarefas para o repositório dotbash: clonar, dar permissão,
+# exibir instruções, licenças e contatos.
 
-# 🎯 Metas Principais 🎯
-.PHONY: all clone chmod use contribute license contact info
+.PHONY: all info clone chmod use contribute license contact final
 
-all: info clone chmod use contribute license contact
+all: info clone chmod use contribute license contact final
 
+# ------------------------------------------------------------------------------
+# 📌 Informações gerais
+# ------------------------------------------------------------------------------
 info:
 	@cat <<EOF
 ------------------------------------------------------------------------------
@@ -19,105 +20,113 @@ info:
 ------------------------------------------------------------------------------
 
 👋 Bem-vindo ao dotbash, meu repositório onde o terminal vira palco! 👋
-  Aqui você encontra uma coleção de até 10 scripts Bash cheios de personalidade,
-  feitos com muito carinho e um toque do meu jeito único. São ferramentas que
-  vão do básico ao quase avançado, com cores vibrantes e aquele charme que
-  faz o #!/bin/bash brilhar! ✨
+Aqui você encontra até 10 scripts Bash com estilo e praticidade, do básico ao
+quase avançado — sempre com cores vibrantes e um toque pessoal. ✨
 
-🎯 O que é o dotbash? 🎯
-  O dotbash é meu laboratório de ideias no terminal. Um lugar onde crio scripts
-  Bash para simplificar a vida, automatizar tarefas ou só curtir a vibe do Linux.
-  Cada script é como uma pintura: simples, funcional e com um toque de estilo
-  (spoiler: eu adoro um output colorido! 🎨). A meta é ter até 10 ferramentas,
-  a maioria básicas, mas todas com aquele quê especial que é só meu. ☕
-
-  🛠️ Scripts práticos para o dia a dia
-  🎨 Outputs coloridos e cheios de vida
-  😎 Feito com o meu jeito de programar
+🎯 O que é o dotbash?
+  • Meu laboratório de ideias no terminal.
+  • Scripts úteis, automatizados e com outputs coloridos 🎨
+  • A meta? Até 10 ferramentas únicas e cheias de personalidade ☕
 
 EOF
 
+# ------------------------------------------------------------------------------
+# 📦 Clonagem do repositório
+# ------------------------------------------------------------------------------
 clone:
 	@echo "⬇️ Clonando o repositório dotbash..."
 	@if [ ! -d "dotbash" ]; then \
 		git clone https://github.com/seu-usuario/dotbash.git; \
-		echo "✅ Repositório dotbash clonado com sucesso!"; \
+		echo "✅ Repositório clonado com sucesso!"; \
 	else \
-		echo "⚠️ O diretório 'dotbash' já existe. Se precisar clonar novamente, remova-o primeiro."; \
+		echo "⚠️ Diretório 'dotbash' já existe. Remova-o para clonar novamente."; \
 	fi
 
-chmod: clone
-	@echo "🔑 Liberando o poder dos scripts (chmod +x *.sh)..."
+# ------------------------------------------------------------------------------
+# 🔐 Permissões de execução
+# ------------------------------------------------------------------------------
+chmod:
+	@echo "🔑 Concedendo permissão de execução aos scripts..."
 	@if [ -d "dotbash" ]; then \
 		cd dotbash && chmod +x *.sh && cd ..; \
-		echo "✅ Permissões de execução concedidas aos scripts!"; \
+		echo "✅ Scripts agora são executáveis!"; \
 	else \
 		echo "⚠️ Diretório 'dotbash' não encontrado. Execute 'make clone' primeiro."; \
 	fi
 
+# ------------------------------------------------------------------------------
+# 🛠️ Como usar
+# ------------------------------------------------------------------------------
 use:
 	@cat <<EOF
 
-🖥️ Como Usar 🖥️
-  Quer mergulhar no dotbash? É só seguir esses passos:
+🖥️ Como Usar
 
-  1. Clone o repositório e sinta a vibe:
-     git clone https://github.com/seu-usuario/dotbash.git
-     cd dotbash
+1. Clone o repositório:
+   git clone https://github.com/seu-usuario/dotbash.git
+   cd dotbash
 
-  2. Libere o poder dos scripts:
-     chmod +x *.sh
+2. Dê permissão de execução:
+   chmod +x *.sh
 
-  3. Escolha sua ferramenta e divirta-se:
-     Cada script tem suas próprias instruções. Dá uma olhada nos arquivos ou
-     nos READMEs específicos na pasta! 📂
+3. Execute os scripts com ./nomedoscript.sh
+   Cada script tem instruções próprias no README ou no próprio arquivo.
 
 EOF
 
+# ------------------------------------------------------------------------------
+# 🤝 Como contribuir
+# ------------------------------------------------------------------------------
 contribute:
 	@cat <<EOF
 
-🤝 Contribuindo 🤝
-  O dotbash é meu xodó, mas estou sempre aberto a ideias! Se você quiser
-  sugerir melhorias ou até criar algo novo, é só:
+🤝 Contribuindo
 
-  - Abrir uma issue com sua ideia 💡
-  - Mandar um pull request com seu código 🚀
+Quer colaborar? Sinta-se à vontade:
 
-  Vamos fazer o terminal brilhar juntos? 😄
+• Abra uma issue com sugestões 💡
+• Envie um pull request com melhorias 🚀
+
+Vamos fazer o terminal brilhar juntos! 😄
 
 EOF
 
+# ------------------------------------------------------------------------------
+# 📜 Licença
+# ------------------------------------------------------------------------------
 license:
 	@cat <<EOF
 
-📜 Licença 📜
-  O dotbash está sob a MIT License. Isso significa que você pode usar, remixar
-  e compartilhar à vontade, desde que dê um high-five com os créditos pro seu
-  amigo aqui! ✋
+📜 Licença
+
+Este projeto está sob a MIT License.
+Use, modifique e compartilhe — só não esqueça de dar os créditos! ✋
 
 EOF
 
+# ------------------------------------------------------------------------------
+# 📬 Contato
+# ------------------------------------------------------------------------------
 contact:
 	@cat <<EOF
 
-📬 Contato 📬
-  Quer trocar ideia sobre Bash, Linux ou só jogar conversa fora? Me acha por aí:
+📬 Contato
 
-  🌐 GitHub: https://github.com/seu-usuario
-  📧 Gmail: gustavocg2107@gmail.com
-  🔗 LinkedIn: https://www.linkedin.com/in/gustavo-gaspar-270850319/
+• GitHub:   https://github.com/seu-usuario
+• Gmail:    gustavocg2107@gmail.com
+• LinkedIn: https://www.linkedin.com/in/gustavo-gaspar-270850319/
 
-  Tô sempre na área pra um papo! 🗣️
+Tô sempre na área pra trocar ideia! 🗣️
 
 EOF
 
-final: info
+# ------------------------------------------------------------------------------
+# ✨ Encerramento
+# ------------------------------------------------------------------------------
+final:
 	@cat <<EOF
 
-✨ Feito com 💻, muita cafeína e paixão pelo terminal por Gusmares. ✨
+✨ Feito com 💻, cafeína e paixão pelo terminal por Gusmares. ✨
 ------------------------------------------------------------------------------
-EOF
 
-.PHONY: final
-all: final
+EOF
