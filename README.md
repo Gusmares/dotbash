@@ -14,7 +14,7 @@ all: info clone chmod use contribute license contact final
 # 📌 Informações gerais
 # ------------------------------------------------------------------------------
 info:
-	@cat <<EOF
+	
 ------------------------------------------------------------------------------
 🌟 dotbash - Deixe seu terminal brilhar! 🌟
 ------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ quase avançado — sempre com cores vibrantes e um toque pessoal. ✨
   • Scripts úteis, automatizados e com outputs coloridos 🎨
   • A meta? Até 10 ferramentas únicas e cheias de personalidade ☕
 
-EOF
+
 
 # ------------------------------------------------------------------------------
 # 📦 Clonagem do repositório
@@ -58,7 +58,6 @@ chmod:
 # 🛠️ Como usar
 # ------------------------------------------------------------------------------
 use:
-	@cat <<EOF
 
 🖥️ Como Usar
 
@@ -72,13 +71,13 @@ use:
 3. Execute os scripts com ./nomedoscript.sh
    Cada script tem instruções próprias no README ou no próprio arquivo.
 
-EOF
+
 
 # ------------------------------------------------------------------------------
 # 🤝 Como contribuir
 # ------------------------------------------------------------------------------
 contribute:
-	@cat <<EOF
+	
 
 🤝 Contribuindo
 
@@ -89,26 +88,25 @@ Quer colaborar? Sinta-se à vontade:
 
 Vamos fazer o terminal brilhar juntos! 😄
 
-EOF
 
 # ------------------------------------------------------------------------------
 # 📜 Licença
 # ------------------------------------------------------------------------------
 license:
-	@cat <<EOF
+	
 
 📜 Licença
 
 Este projeto está sob a MIT License.
 Use, modifique e compartilhe — só não esqueça de dar os créditos! ✋
 
-EOF
+
 
 # ------------------------------------------------------------------------------
 # 📬 Contato
 # ------------------------------------------------------------------------------
 contact:
-	@cat <<EOF
+
 
 📬 Contato
 
@@ -118,15 +116,15 @@ contact:
 
 Tô sempre na área pra trocar ideia! 🗣️
 
-EOF
+
 
 # ------------------------------------------------------------------------------
 # ✨ Encerramento
 # ------------------------------------------------------------------------------
 final:
-	@cat <<EOF
+	
 
 ✨ Feito com 💻, cafeína e paixão pelo terminal por Gusmares. ✨
 ------------------------------------------------------------------------------
 
-EOF
+
