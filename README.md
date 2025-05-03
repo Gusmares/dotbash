@@ -13,27 +13,29 @@
 all: info clone chmod use contribute license contact
 
 info:
-	@echo "------------------------------------------------------------------------------"
-	@echo "🌟 dotbash - Deixe seu terminal brilhar! 🌟"
-	@echo "------------------------------------------------------------------------------"
-	@echo ""
-	@echo "👋 Bem-vindo ao dotbash, meu repositório onde o terminal vira palco! 👋"
-	@echo "   Aqui você encontra uma coleção de até 10 scripts Bash cheios de personalidade,"
-	@echo "   feitos com muito carinho e um toque do meu jeito único. São ferramentas que"
-	@echo "   vão do básico ao quase avançado, com cores vibrantes e aquele charme que"
-	@echo "   faz o #!/bin/bash brilhar! ✨"
-	@echo ""
-	@echo "🎯 O que é o dotbash? 🎯"
-	@echo "   O dotbash é meu laboratório de ideias no terminal. Um lugar onde crio scripts"
-	@echo "   Bash para simplificar a vida, automatizar tarefas ou só curtir a vibe do Linux."
-	@echo "   Cada script é como uma pintura: simples, funcional e com um toque de estilo"
-	@echo "   (spoiler: eu adoro um output colorido! 🎨). A meta é ter até 10 ferramentas,"
-	@echo "   a maioria básicas, mas todas com aquele quê especial que é só meu. ☕"
-	@echo ""
-	@echo "   🛠️ Scripts práticos para o dia a dia"
-	@echo "   🎨 Outputs coloridos e cheios de vida"
-	@echo "   😎 Feito com o meu jeito de programar"
-	@echo ""
+	@cat <<EOF
+------------------------------------------------------------------------------
+🌟 dotbash - Deixe seu terminal brilhar! 🌟
+------------------------------------------------------------------------------
+
+👋 Bem-vindo ao dotbash, meu repositório onde o terminal vira palco! 👋
+  Aqui você encontra uma coleção de até 10 scripts Bash cheios de personalidade,
+  feitos com muito carinho e um toque do meu jeito único. São ferramentas que
+  vão do básico ao quase avançado, com cores vibrantes e aquele charme que
+  faz o #!/bin/bash brilhar! ✨
+
+🎯 O que é o dotbash? 🎯
+  O dotbash é meu laboratório de ideias no terminal. Um lugar onde crio scripts
+  Bash para simplificar a vida, automatizar tarefas ou só curtir a vibe do Linux.
+  Cada script é como uma pintura: simples, funcional e com um toque de estilo
+  (spoiler: eu adoro um output colorido! 🎨). A meta é ter até 10 ferramentas,
+  a maioria básicas, mas todas com aquele quê especial que é só meu. ☕
+
+  🛠️ Scripts práticos para o dia a dia
+  🎨 Outputs coloridos e cheios de vida
+  😎 Feito com o meu jeito de programar
+
+EOF
 
 clone:
 	@echo "⬇️ Clonando o repositório dotbash..."
@@ -54,58 +56,68 @@ chmod: clone
 	fi
 
 use:
-	@echo ""
-	@echo "🖥️ Como Usar 🖥️"
-	@echo "   Quer mergulhar no dotbash? É só seguir esses passos:"
-	@echo ""
-	@echo "   1. Clone o repositório e sinta a vibe:"
-	@echo "      git clone https://github.com/seu-usuario/dotbash.git"
-	@echo "      cd dotbash"
-	@echo ""
-	@echo "   2. Libere o poder dos scripts:"
-	@echo "      chmod +x *.sh"
-	@echo ""
-	@echo "   3. Escolha sua ferramenta e divirta-se:"
-	@echo "      Cada script tem suas próprias instruções. Dá uma olhada nos arquivos ou"
-	@echo "      nos READMEs específicos na pasta! 📂"
-	@echo ""
+	@cat <<EOF
+
+🖥️ Como Usar 🖥️
+  Quer mergulhar no dotbash? É só seguir esses passos:
+
+  1. Clone o repositório e sinta a vibe:
+     git clone https://github.com/seu-usuario/dotbash.git
+     cd dotbash
+
+  2. Libere o poder dos scripts:
+     chmod +x *.sh
+
+  3. Escolha sua ferramenta e divirta-se:
+     Cada script tem suas próprias instruções. Dá uma olhada nos arquivos ou
+     nos READMEs específicos na pasta! 📂
+
+EOF
 
 contribute:
-	@echo ""
-	@echo "🤝 Contribuindo 🤝"
-	@echo "   O dotbash é meu xodó, mas estou sempre aberto a ideias! Se você quiser"
-	@echo "   sugerir melhorias ou até criar algo novo, é só:"
-	@echo ""
-	@echo "   - Abrir uma issue com sua ideia 💡"
-	@echo "   - Mandar um pull request com seu código 🚀"
-	@echo ""
-	@echo "   Vamos fazer o terminal brilhar juntos? 😄"
-	@echo ""
+	@cat <<EOF
+
+🤝 Contribuindo 🤝
+  O dotbash é meu xodó, mas estou sempre aberto a ideias! Se você quiser
+  sugerir melhorias ou até criar algo novo, é só:
+
+  - Abrir uma issue com sua ideia 💡
+  - Mandar um pull request com seu código 🚀
+
+  Vamos fazer o terminal brilhar juntos? 😄
+
+EOF
 
 license:
-	@echo ""
-	@echo "📜 Licença 📜"
-	@echo "   O dotbash está sob a MIT License. Isso significa que você pode usar, remixar"
-	@echo "   e compartilhar à vontade, desde que dê um high-five com os créditos pro seu"
-	@echo "   amigo aqui! ✋"
-	@echo ""
+	@cat <<EOF
+
+📜 Licença 📜
+  O dotbash está sob a MIT License. Isso significa que você pode usar, remixar
+  e compartilhar à vontade, desde que dê um high-five com os créditos pro seu
+  amigo aqui! ✋
+
+EOF
 
 contact:
-	@echo ""
-	@echo "📬 Contato 📬"
-	@echo "   Quer trocar ideia sobre Bash, Linux ou só jogar conversa fora? Me acha por aí:"
-	@echo ""
-	@echo "   🌐 GitHub: https://github.com/seu-usuario"
-	@echo "   📧 Gmail: gustavocg2107@gmail.com"
-	@echo "   🔗 LinkedIn: https://www.linkedin.com/in/gustavo-gaspar-270850319/"
-	@echo ""
-	@echo "   Tô sempre na área pra um papo! 🗣️"
-	@echo ""
+	@cat <<EOF
+
+📬 Contato 📬
+  Quer trocar ideia sobre Bash, Linux ou só jogar conversa fora? Me acha por aí:
+
+  🌐 GitHub: https://github.com/seu-usuario
+  📧 Gmail: gustavocg2107@gmail.com
+  🔗 LinkedIn: https://www.linkedin.com/in/gustavo-gaspar-270850319/
+
+  Tô sempre na área pra um papo! 🗣️
+
+EOF
 
 final: info
-	@echo ""
-	@echo "✨ Feito com 💻, muita cafeína e paixão pelo terminal por Gusmares. ✨"
-	@echo "------------------------------------------------------------------------------"
+	@cat <<EOF
+
+✨ Feito com 💻, muita cafeína e paixão pelo terminal por Gusmares. ✨
+------------------------------------------------------------------------------
+EOF
 
 .PHONY: final
 all: final
