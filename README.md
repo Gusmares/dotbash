@@ -16,7 +16,7 @@ Este projeto é um laboratório de ideias no terminal — uma coleção pessoal 
 
 Você pode me encontrar nos seguintes canais:
 
-- **GitHub**: [https://github.com/seu-usuario](https://github.com/seu-usuario)
+- **GitHub**: (https://github.com/gusmares)
 - **Gmail**: gustavocg2107@gmail.com
 - **LinkedIn**: [https://www.linkedin.com/in/gustavo-gaspar-270850319/](https://www.linkedin.com/in/gustavo-gaspar-270850319/)
 
